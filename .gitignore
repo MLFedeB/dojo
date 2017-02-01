@@ -1,0 +1,12 @@
+tags
+*.sw*
+*.log
+.DS_Store
+*.err
+.idea/
+*.iml
+node_modules/
+coverage/
+*.orig
+all.zip
+merged_keys.po
