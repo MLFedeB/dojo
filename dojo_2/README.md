@@ -36,3 +36,45 @@ Programación orientada a objetos + TDD
 1. Planteo de problema
 2. Codificación
 3. Puesta en común
+
+## Pasos para realizar el workshop
+
+1. Clonamos el repo:
+
+    ```bash
+        git clone https://github.com/diegosanchez/dojo.git
+    ```
+
+2. Descargamos el branch remote correspondiente al workshop:
+
+    ```bash
+        git checkout workshop
+    ```
+
+3. Instalamos módulos
+
+    ```bash
+        npm install
+    ```
+
+4. Ejecutamos los tests
+
+    ```bash
+        npm run test
+    ```
+    
+    o
+    
+    ```bash
+        make
+    ```
+
+
+
+
+## Qué necesito?
+
+1. Notebook para realizar workshop (si queres hacerlo, sino podes venir a compartir tus experiencias)
+2. node 4.2.3
+3. npm  2.14.7
+4. Ganas de compartir tu solución.
