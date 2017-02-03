@@ -10,21 +10,21 @@ El objetivo de este dojo es implementar una hoja de cálulo (reducida) proveyend
 
 Un ejemplo de Hoja de cálculo (identidad)
 
-| a    | b           | c |
-|------|-------------|---|
-|      | 1           |   |
-|      | 2           |   |
-| Sum: | =id(b1)     |   |
+|   | a    | b           | c |
+|---|------|-------------|---|
+| 1 |      | 1           |   |
+| 2 |      | 2           |   |
+| 3 | Sum: | =id(b1)     |   |
 
 el valor de ```b1``` debe ser 1 y deberá actualizarse según se actualice la celda referenciada
 
 Un ejemplo de Hoja de cálculo (sumatoria)
 
-| a    | b           | c |
-|------|-------------|---|
-|      | 1           |   |
-|      | 2           |   |
-| Sum: | =sum(b1:b2) |   |
+|   | a    | b           | c |
+|---|------|-------------|---|
+| 1 |      | 1           |   |
+| 2 |      | 2           |   |
+| 3 | Sum: | =sum(b1:b2) |   |
 
 el valor de ```b3``` debe ser 3 y deberá actualizarse según se actualice la celda referenciada
 ### Metodología
