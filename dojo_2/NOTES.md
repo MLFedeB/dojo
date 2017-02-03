@@ -66,6 +66,6 @@ Si bien no implementamos este modelo surgió la necesidad de agregarle a la celd
 Hacia el final del dojo surgió la idea de que el código no es performante. Dejando de un lado la discusión técnica quiero enfatizar el hecho de que este dojo se plantea en un contexto en el cual se extraman y enfatizan la aplicación de técnicas de programación orientada a objetos sin importar otros factores.  Dicho esto les dejo dos preguntas para abordar en el próximo dojo:
 
 1. Cómo podríamos abordar este problemática manteniendo la utilización del paradigma? 
-2. Es realmente relevante esta discución? Sí, no, no, sí? Porqué
+2. Es realmente relevante esta discución? Sí, no, no, sí? Porqué?
 
 ### To be continued...
