@@ -20,7 +20,7 @@ Abordamos el ejercicio [Dojo#2](https://github.com/diegosanchez/dojo/tree/worksh
 0. Checked - Porqué utilizar TDD?
 1. Checked - No quiero codear de más - gmontes
 2. Cómo declaro una interface? - gmontes
-3. Checked - Como nos afectan los cambios de requerimientos sobre el modelo planteado?
+3. Checked - Cómo nos afectan los cambios de requerimientos sobre el modelo planteado?
 4. Checked - Cuántas entidades creamos (inicialmente)?
 5. Checked - Strings vs Entidades (Utilización de tipos primitivos como entidades de modelo)
 6. Checked - Almacén de datos *vs* Contratos
