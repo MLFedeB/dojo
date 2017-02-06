@@ -63,9 +63,14 @@ Si bien no implementamos este modelo surgió la necesidad de agregarle a la celd
 
 > En general es deseable enriquecer la interface de las entidades de nuestro modelo en lugar de exponer sus propiedades a través de getters y/o setters.  Esto es perjudicial a la hora de cambiar la implementación de la clase que expone sus atributos, además la exposición de atributos puede romper el encapsulamiento. Adicionalmente exponer atributos viola el principio de diseño de 'Ocultamiento de la información' (Cuestión 6,7).
 
+#### Pendiente 1 (Cuestión 9)
 Hacia el final del dojo surgió la idea de que el código no es performante. Dejando de un lado la discusión técnica quiero enfatizar el hecho de que este dojo se plantea en un contexto en el cual se extraman y enfatizan la aplicación de técnicas de programación orientada a objetos sin importar otros factores.  Dicho esto les dejo dos preguntas para abordar en el próximo dojo:
 
 1. Cómo podríamos abordar este problemática manteniendo la utilización del paradigma? 
 2. Es realmente relevante esta discución? Sí, no, no, sí? Porqué?
+
+#### Pendiente 2 (Cuestión 5)
+
+Durante la actividad se planteó la necesidad de definir una interfase para resolver el promblema. La pregunta que surge es: Qué necesidad hay de definir interfase? Porqué? Hay alternativas? Cuando?
 
 ### To be continued...
