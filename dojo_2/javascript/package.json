@@ -8,7 +8,11 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies" : {
+    "lodash": "4.15.0"
+  },
   "devDependencies": {
+    "rewire": "2.5.1",
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
   }
