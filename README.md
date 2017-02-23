@@ -2,12 +2,19 @@
 
 ### Problemática
 
-En ocasiones nos encontramos con código que tiene las siguientes características:
+1. Cuantos if y/o else if tiene nuestro código? 
+2. Utilizamos flags como parámetros? 
+3. Escribimos getters/setters por si acaso? 
+4. Tenemos métodos o funciones con más de dos parámetros? 
+5. Escribimos código duplicado? 
+6. Diferenciamos Uso vs Construcción? 
+7. Un cambio de requerimiento afecta a varias entidades de nuestro modelo? 
+8. El lenguaje que utilizamos en el código es diferente al que utiliza la compañía? 
+9. Sabemos cuál es el impacto de estas prácticas?
 
-1. Utilización de conjunto de ```if, else if, else if, else``` y/o ```switches```
-2. El conjunto de módulos que conforman nuestro sistema están estrechamente interrelacionados de tal forma que al actualizar uno este cambio impacta en un segundo o tercer módulo.
-3. Existen los "trenes de puntos": instancia.getAtributo0().getAtributo1().getAtributoN().hagoAlgo()
-4. … (otras)
+Si algunas de estas cosas se tornaron cotidianas, podríamos decir que nuestro código es de mala calidad!
+
+Crees que esto sí degrada o no degrada la calidad del código? Te gustaría discutir porque sí o porque no y eventualmente modificar estas prácticas cotidianas?
 
 ### ¿Cómo nos impacta en el día a día estas prácticas?
 
