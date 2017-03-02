@@ -37,7 +37,7 @@ Programación orientada a objetos + TDD
 2. Codificación
 3. Puesta en común
 
-## Pasos para realizar el workshop
+## Pasos para realizar el workshop 
 
 1. Clonamos el repo:
 
@@ -51,13 +51,15 @@ Programación orientada a objetos + TDD
         git checkout workshop
     ```
 
-3. Instalamos módulos
+### Pasos específicos para javascript
+
+1. Instalamos módulos
 
     ```bash
         npm install
     ```
 
-4. Ejecutamos los tests
+2. Ejecutamos los tests
 
     ```bash
         npm run test
@@ -69,12 +71,30 @@ Programación orientada a objetos + TDD
         make
     ```
 
+#### Qué necesito?
 
+2. node 4.2.3
+3. npm  2.14.7
+
+
+### Pasos específicos para java
+
+1. Ejecutamos los tests
+
+    ```bash
+        mvn test
+        ( Estando en la carpeta que contiene el pom.xml )
+    ```
+
+
+
+#### Qué necesito?
+
+1. Maven 3+ ( brew install maven )
+2. JDK 1.7 u 1.8## Pasos para realizar el workshop
 
 
 ## Qué necesito?
 
 1. Notebook para realizar workshop (si queres hacerlo, sino podes venir a compartir tus experiencias)
-2. node 4.2.3
-3. npm  2.14.7
-4. Ganas de compartir tu solución.
+2. Ganas de compartir tu solución.
