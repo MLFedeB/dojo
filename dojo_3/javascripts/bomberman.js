@@ -5,7 +5,7 @@
 module.exports = Bomberman;
 
 function Bomberman(_cell) {
-    this.cell = _cell;
+    this.stepIn(_cell);
 }
 
 Bomberman.prototype.stepIn = function stepIn(_cell) {
@@ -13,7 +13,7 @@ Bomberman.prototype.stepIn = function stepIn(_cell) {
 };
 
 Bomberman.prototype.isIn = function isIn(_cell) {
-    return this.cell.areEqual(_cell);
+    return this.cell && this.cell.areEqual(_cell.x, _cell.y);
 };
 
 Bomberman.prototype.updateCell = function updateCell(_cell) {

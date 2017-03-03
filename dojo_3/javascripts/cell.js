@@ -9,16 +9,8 @@ function Cell(_x, _y) {
     this.y = _y;
 }
 
-Cell.prototype.getX = function getX() {
-    return this.x;
-};
-
-Cell.prototype.getY = function getY() {
-    return this.y;
-};
-
-Cell.prototype.areEqual = function areEqual(_cell) {
-    return (this.x === _cell.getX()) && (this.y === _cell.getY());
+Cell.prototype.areEqual = function areEqual(x, y) {
+    return (this.x === x) && (this.y === y);
 };
 
 Cell.prototype.addIfFree = function addIfFree(o) {
