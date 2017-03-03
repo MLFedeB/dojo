@@ -12,6 +12,8 @@ describe("bomberman", () => {
 
             bomber.stepIn(nextCell);
             chai.assert.equal(bomber.isIn(nextCell), true);
+            chai.assert.equal(bomber.isIn(startCell), false);
+            chai.assert(startCell.isFree(), true);
         });
 
         it.skip("steps into a cell which is busy with an object then it doesn't move and throw an exception", () => {

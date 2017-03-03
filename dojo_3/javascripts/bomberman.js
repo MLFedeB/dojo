@@ -13,9 +13,12 @@ Bomberman.prototype.stepIn = function stepIn(_cell) {
 };
 
 Bomberman.prototype.isIn = function isIn(_cell) {
-    return this.cell && this.cell.areEqual(_cell.x, _cell.y);
+    return this.cell && this.cell.areEqual(_cell);
 };
 
 Bomberman.prototype.updateCell = function updateCell(_cell) {
+    if (this.cell) {
+        this.cell.free();
+    }
     this.cell = _cell;
 }
