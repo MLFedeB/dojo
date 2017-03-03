@@ -1,7 +1,19 @@
 const chai = require('chai');
 
+const Bomber = require('../bomberman');
+const Cell = require('../cell');
+
 describe("bomberman", () => {
     describe("bomberman", () => {
+        it("steps into a cell which is empty then it moves in", () => {
+            var startCell = new Cell(0,0);
+            var bomber = new Bomber(startCell);
+            var nextCell = new Cell(0,1);
+
+            bomber.stepIn(nextCell);
+            chai.assert.equal(bomber.isIn(nextCell), true);
+        });
+
         it.skip("steps into a cell which is busy with an object then it doesn't move and throw an exception", () => {
         });
 
