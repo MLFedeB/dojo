@@ -17,6 +17,9 @@ Cell.prototype.addIfFree = function addIfFree(o) {
     if (this.isFree()) {
         this.content = o;
         this.content.updateCell(this);
+    } else {
+        o.resolveCollision(this.content);
+        throw "Busy cell";
     }
 }
 

@@ -2,23 +2,19 @@
  * Created by fbazan on 3/3/17.
  */
 
+var util = require('util');
+var CellContent = require('./cell_content');
+var Enemy = require('./enemy');
 module.exports = Bomberman;
 
 function Bomberman(_cell) {
-    this.stepIn(_cell);
+    this.status = 'alive';
+    CellContent.call(this, _cell);
 }
+util.inherits(Bomberman, CellContent);
 
-Bomberman.prototype.stepIn = function stepIn(_cell) {
-    _cell.addIfFree(this);
-};
-
-Bomberman.prototype.isIn = function isIn(_cell) {
-    return this.cell && this.cell.areEqual(_cell);
-};
-
-Bomberman.prototype.updateCell = function updateCell(_cell) {
-    if (this.cell) {
-        this.cell.free();
+Bomberman.prototype.resolveCollision = function resolveCollision(content) {
+    if (content instanceof Enemy) {
+        this.status = 'died';
     }
-    this.cell = _cell;
-}
+};
