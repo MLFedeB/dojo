@@ -17,7 +17,7 @@ Abordamos el ejercicio [Dojo#3](https://github.com/diegosanchez/dojo/tree/worksh
 
 ## Qué ideas surgieron durante y/o problemas el dojo?
 
-1. Checked - Agregar un método al bomber ```getCurrentPosition```
+1. Checked - Agregar un método al ```Bomber>>getCurrentPosition```
 2. Checked - Utilizamos TDD para discribir la utilización de la clase de nuestro modelo.
 3. Checked - Tengo que establecer una herencia para que la celda contenga cualquier cosa
 4. Reporte de cobertura.
@@ -77,7 +77,7 @@ Habiendo evitado la utilización del método ```Bomber>>getCurrentPosition``` ma
 
 ### Enriquecimiento de interfases de entidades
 
-El enrequecimiento de las interfaces trae aparejado la distribución de responsabilidades.  En este punto, hasta el momento, el Bomber tiene las siguientes responsabilidades (derivadas de su interfase):
+El enrequecimiento de las interfaces trae aparejado la distribución de responsabilidades.  En este punto, hasta el momento, el ```Bomber``` tiene las siguientes responsabilidades (derivadas de su interfase):
 
 - Dar un paso a otra celda -> ```Bomber>>stepsIn```.
 - Saber donde está -> ```Bomber>>isIn```.
