@@ -109,5 +109,6 @@ Esto generó el siguiente diagrama de secuencia para el último caso de uso:
 
 Habiendo diseñado nuestra solución utilizando TDD y escribiendo el código MÍNIMO necesario para que nuestors tests pasen obtuvimos el siguiente porcentaje de cobertura:
 
+![Diagram#2](diagrams/coverage_report.png)
 
 ### To be continued...
