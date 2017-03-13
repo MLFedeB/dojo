@@ -25,7 +25,7 @@ Abordamos el ejercicio [Dojo#3](https://github.com/diegosanchez/dojo/tree/worksh
 
 ## Cronología de la actividad
 
-Comenzamos escribiendo el código **MÍNIMO** necesario para que nuestro primer tests pase poniendo especial atención y cuidado en el código que escribímos ya que este será la interface de las entidades de nuestro modelo. 
+Comenzamos escribiendo el código **MÍNIMO** necesario para que nuestro primer tests pase poniendo especial atención y cuidado en el código que escribímos ya que este será la interface de las entidades de nuestro modelo. A modo de referencia listo el caso de uso que vamos a implementar.
 
 ```js
     it("steps into a cell which is empty then it moves in", () => { 
@@ -33,7 +33,7 @@ Comenzamos escribiendo el código **MÍNIMO** necesario para que nuestro primer 
     });
 ```
 
-Fué en este punto que notamos que TDD nos permitía diseñar la solución: nuestro conjunto de entiedades y sus interfaces (Cuestion 3). En este punto vale la pena recordar como es el flujo de [TDD](../dojo_2/NOTES.md). 
+Fué en este punto que notamos que TDD nos permitía diseñar la solución entendiendo por diseño: definir conjunto de entiedades y sus interfaces (Cuestion 3). Vale la pena recordar como es el flujo de [TDD](../dojo_2/NOTES.md). 
 
 Lo primero que hicimos fué escribir las entidades, sus relaciones e interfases de forma tal que:
 - El código se lea como una historia.
