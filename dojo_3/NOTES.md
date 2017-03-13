@@ -18,9 +18,9 @@ Abordamos el ejercicio [Dojo#3](https://github.com/diegosanchez/dojo/tree/worksh
 ## Qué ideas surgieron durante y/o problemas el dojo?
 
 1. Checked - Agregar un método al ```Bomber>>getCurrentPosition```
-2. Checked - Utilizamos TDD para discribir la utilización de la clase de nuestro modelo.
-3. Checked - Tengo que establecer una herencia para que la celda contenga cualquier cosa
-4. Reporte de cobertura.
+2. Checked - Utilizamos TDD para discribir el modo de utilización de la/s clase/s de nuestro modelo.
+3. Checked - Tengo que establecer una herencia para que la celda contenga cualquier cosa (bomber, ladrillos, etc.)
+4. Checked - Reporte de cobertura.
 5. Checked - Enriquecer interfase vs Getters y Setters
 
 ## Cronología de la actividad
@@ -114,7 +114,7 @@ La interacción que se estableció entre ```Bomber``` y ```Celda``` queda descri
 
 ![Diagram#1](diagrams/Bomber_stepsIn_another_cell.png)
 
-Habiendo diseñado nuestra solución utilizando TDD y escribiendo el código MÍNIMO necesario para que nuestors tests pasen obtuvimos el siguiente porcentaje de cobertura:
+Habiendo diseñado nuestra solución utilizando TDD y escribiendo el código MÍNIMO necesario para que nuestors tests pasen obtuvimos el siguiente porcentaje de cobertura (Cuestión 4):
 
 ![Diagram#2](diagrams/coverage_report.png)
 
