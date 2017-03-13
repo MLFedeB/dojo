@@ -50,7 +50,7 @@ Lo primero que hicimos fué escribir las entidades, sus relaciones e interfases 
     });
 ```
 
-Vemos en este código que estábamos exponiendo innecesariamente la propiedad posición del ```Bomber```. Esto viola el principio de ocultamiento de la información.  Entonces que hichimos...??? Los siguiente:
+Vemos en este código que estábamos exponiendo innecesariamente la propiedad posición del ```Bomber```. Esto viola el principio de ocultamiento de la información.  Entonces que hichimos...??? Lo siguiente:
 
 ```js
     it("steps into a cell which is empty then it moves in", () => { 
@@ -61,15 +61,15 @@ Vemos en este código que estábamos exponiendo innecesariamente la propiedad po
     });
 ```
 
-En este punto surgen varias cuestions.
+Varias cuestions a considerar...
 
-### Rol que desempeñanmos en la escritura del código del test
+### Rol que desempeñamos en la escritura del código del test
 
 Es importante notar que al momento de escribir los tests de integración estamos encarnando el rol del usuario de nuestra API y es deseable intentar utilizar las clases (bajo construcción) como si no supiéramos **como** es que llevan a cabo la tarea que estamos describiendo.
 
-### Cantidad de decisiones transendentes que tomamos y legibilidad 
+### Cantidad de decisiones transcendentes que tomamos y legibilidad 
 
-Habiendo planteado el último descripción de nuestro test (la que incluye ```Bomber.isIn```) hemos enriquecido las interfaces de nuestras entidades evitando revelar estado propio de cada uno da ellas. Esto tiene un impacto directo en la reducción del acoplamiento y el aumento de la cohesión (Cuestión 5).
+Habiendo planteado la última descripción de nuestro test (la que incluye ```Bomber.isIn```) hemos enriquecido las interfaces de nuestras entidades evitando revelar estado propio de cada uno da ellas. Esto tiene un impacto directo en la reducción del acoplamiento y el consecuente aumento de la cohesión (Cuestión 5).
 
 ### Ocultamiento de la información
 
@@ -77,7 +77,7 @@ Habiendo evitado la utilización del método ```Bomber>>getCurrentPosition``` ma
 
 ### Enriquecimiento de interfases de entidades
 
-El enrequecimiento de las interfaces trae aparejado la distribución de responsabilidades.  En este punto, hasta el momento, el ```Bomber``` tiene las siguientes responsabilidades (derivadas de su interfase):
+El enrequecimiento de las interfases trae aparejado la distribución de responsabilidades.  En este punto, hasta el momento, el ```Bomber``` tiene las siguientes responsabilidades (derivadas de su interfase):
 
 - Dar un paso a otra celda -> ```Bomber>>stepsIn```.
 - Saber donde está -> ```Bomber>>isIn```.
@@ -86,9 +86,9 @@ El enrequecimiento de las interfaces trae aparejado la distribución de responsa
 
 Finalmente, habiendo escrito nuestro tests podemos ya pasar a escribir el código **MÍNIMO** necesario para que este test pase.
 
-> Evitar la tentasión de modificar el test para que la programación de nuestro código se más sencilla. Recordar que el test es lo que debe ser y tenemos que apegarnos a esto.
+> Evitar la tentación de modificar el test para que la programación de nuestro código se más sencilla. Recordar que el test es lo que debe ser y tenemos que apegarnos a esto.
 
-Habiendo escrito este test y el código correspondiente obtuvimos el siguiente diagrama de clases:
+Con el test escrito y el código correspondiente obtuvimos el siguiente diagrama de clases:
 
 ![Diagram#0](diagrams/BomberMan.png)
 
