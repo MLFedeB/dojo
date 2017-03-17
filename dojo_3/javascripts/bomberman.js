@@ -13,7 +13,7 @@ function Bomberman(_cell) {
 }
 util.inherits(Bomberman, CellContent);
 
-Bomberman.prototype.resolveCollision = function resolveCollision(content) {
+Bomberman.prototype.bumpsInto = function bumpsInto(content) {
     if (content instanceof Enemy) {
         this.status = 'died';
     }

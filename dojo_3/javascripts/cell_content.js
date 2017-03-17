@@ -17,9 +17,13 @@ CellContent.prototype.isIn = function isIn(_cell) {
     return this.cell && this.cell.areEqual(_cell);
 };
 
-CellContent.prototype.updateCell = function updateCell(_cell) {
-    if (this.cell) {
+CellContent.prototype.residesIn = function residesIn(newCell) {
+    if (this.cell) { // step out
         this.cell.free();
     }
-    this.cell = _cell;
+    this.cell = newCell;
+};
+
+CellContent.prototype.bumpsInto = function bumpsInto(_cellContent) {
+    console.log('Choque contra ' + _cellContent);
 };

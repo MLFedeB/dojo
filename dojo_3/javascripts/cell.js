@@ -13,12 +13,12 @@ Cell.prototype.areEqual = function areEqual(_cell) {
     return (this.x === _cell.x) && (this.y === _cell.y);
 };
 
-Cell.prototype.addIfFree = function addIfFree(o) {
+Cell.prototype.addIfFree = function addIfFree(newContent) {
     if (this.isFree()) {
-        this.content = o;
-        this.content.updateCell(this);
+        this.content = newContent;
+        this.content.residesIn(this);
     } else {
-        o.resolveCollision(this.content);
+        newContent.bumpsInto(this.content);
         throw "Busy cell";
     }
 }
