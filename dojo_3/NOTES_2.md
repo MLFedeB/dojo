@@ -14,7 +14,7 @@ Participantes
 
 ## Qué hicimos durante el dojo?
 
-Abordamos el ejercicio [Dojo#3](https://github.com/diegosanchez/dojo/tree/workshop/dojo_3) implementando el segundo y tercer tests lo cuál nos forzó a realizar un refactor de nuestro modelo.
+Abordamos el ejercicio [Dojo#3](https://github.com/diegosanchez/dojo/tree/workshop/dojo_3) implementando el segundo y tercer tests lo que nos forzó a realizar un refactor de nuestro modelo.
 
 ## Qué ideas surgieron durante y/o problemas el dojo?
 
