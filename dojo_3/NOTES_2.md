@@ -18,12 +18,12 @@ Abordamos el ejercicio [Dojo#3](https://github.com/diegosanchez/dojo/tree/worksh
 
 ## Qué ideas surgieron durante y/o problemas el dojo?
 
-1. Checked  null vs Entidades
-2. Interacción entre entidades y extensibilidad 
+1. Checked - null vs Entidades
+2. Checked - Interacción entre entidades y extensibilidad 
 
 ## Cronología de la actividad
 
-Retomames la actividad habiendo codificado el test: 
+Retomamos la actividad habiendo codificado el test: 
 
 ```js
 it("steps into a cell which is busy with an object then it doesn't move and throw an exception", () => {
@@ -31,9 +31,10 @@ it("steps into a cell which is busy with an object then it doesn't move and thro
     var there = new Cell(new Wall());
 
     chai.assert.throws(() => { bomber.stepsIn( there ) }, Error);
-});```
+});
+```
 
-Dado que estabamos aplicando TDD, antes de proseguir con el siguiente test ```it.skip("steps into a cell which is busy with an enemy then it dies", () => {}); ````, analizamos la necesidad de un refactor (no necesariamente debemos llevarlo acabo). Para enmarcar las consideraciones comparto el código actual:
+Dado que estabamos aplicando TDD, antes de proseguir con el siguiente test ```it.skip("steps into a cell which is busy with an enemy then it dies", () => {}); ```, analizamos la necesidad de un refactor (no necesariamente debemos llevarlo acabo). Para enmarcar las consideraciones comparto el código actual:
 
 ```js
 var Bomber = class Bomber {
@@ -61,12 +62,12 @@ var Bomber = class Bomber {
 ```
 
 No vimos necesidad de modificar el código del ```Bomber``` ya que:
-- El código hace referencia a entidades del negocio
-- Los mensajes a los objetos son coherentes con su responsabilidad
+- El código hace referencia a entidades del negocio.
+- Los mensajes a los objetos son coherentes con su responsabilidad.
 - No hay ifs (je!)
 - Observación esta linea de código es extraña ```this.stepsOut(this.initialPosition);```. Quedaría más legible escribiendo ```this.stepsOut(this.currentPosition);```, no?
 
-Seguimos revisando nuestro código y llegamos a la clase ```Cell``` (listo):
+Seguimos revisando nuestro código y llegamos a la clase ```Cell``` (listo a continuación):
 
 ```js 
 var Cell = class Cell {
@@ -86,13 +87,14 @@ var Cell = class Cell {
     release() {
         this.okupa = undefined;
     }
-};```
+};
+```
 
 Dos cosas llaman la atención aquí:
 - Aparece un ```if``` en el método ```reclaimedBy```. Uff! 
 - Qué es ```okupa```?  
 
-El nombre ```okupa``` no es representativo para nuestro modelo de entidades, entonces tenemos que cambiarlo.  Podríamos utlizar ```inhabitant```, ```dweller```, ```occupant``` o ```resident```.
+El nombre ```okupa``` no es representativo para nuestro modelo de entidades, entonces tenemos que cambiarlo.  Podríamos utlizar *inhabitant*, *dweller*, *occupant* o *resident*.
 Este ```if``` es consecuencia directa de que la celda tiene un ocupante que puede existir o no.  Este código evidencia la carencia de una entidad en nuestro modelo que represente la ausencia de contenido u ocupante.  Esta carencia en el diseño trae aparejadas varias consecuencias que no se evidencian sino hasta la implementación de las sucesivas pruebas (Cuestion 1).
 
 > La utilización del ```null``` o el ```undefined``` evidencia la ausencia de una entidad del negocio que represente la ausencia de contenido. Esto tiene como efecto la necesidad de tomar desiciones (es null o no el habitante) en lugar de delegar responsabilidad a la instancia que ocupa la celda (**cualquiera sea su clase**).
@@ -114,7 +116,7 @@ it("steps into a cell which is busy with an enemy then it dies", () => {
 });
 ```
 
-Para este nuevo requerimiento sufre modificaciones tanto ```Cell``` como ```Bomber```, listo y comento:
+Para involucrar este nuevo requerimiento sufren modificaciones tanto ```Cell``` como ```Bomber```, listo y comento:
 
 ```js
 var Cell = class Cell {
@@ -143,7 +145,7 @@ var Cell = class Cell {
 };
 ```
 
-Upa! Ahora se complicó feo el código! El ```if``` que comenzó como un elemento inofensivo hoy nos está afectando la legibilidad del código y la extensibilidad.  En este punto imagino várias interacciónes dependiendo de las entidades envueltas: (Bagula - Bomber) (Bagula - Bomba) ( Bomba - Bomberman).
+Upa! Ahora se complicó feo el código! El ```if``` que comenzó como un elemento inofensivo hoy nos está afectando la legibilidad y extensibilidad del código.  En este punto imagino várias interacciones entre varias entidades: (Bagula - Bomber) (Bagula - Bomba) ( Bomba - Bomberman).
 
 Es increíble ver **como nos afecta** la ausencia de la entidad que representa el contenido vacio de la celda (está íntimamente relacionado con este código de baja calidad).
 
@@ -159,9 +161,9 @@ var Cell = class Cell {
     };
 ```
 
-Esto nos permite **NO** tener que consultar si el ocupante de la celda es ```null```. Y de que me sirve??! 
+Esto nos permite **NO** tener que consultar si el ocupante de la celda es ```null```. Y de que me sirve esto??! 
 
-> Independientemente de quién sea el ocupante y quién sea el reclamador de la celda podemos decirles a ambos que colisionen entre sí! Que ellos se encarguen de interactuar (vía polimorfísmo).
+> Independientemente de quién sea el ocupante y quién sea el reclamador de la celda podemos decirles a ambos que colisionen (bumpsInto) entre sí! Que ellos se encarguen de interactuar (vía polimorfísmo).
 
 ```js
 var Cell = class Cell {
@@ -180,7 +182,7 @@ var Cell = class Cell {
 };
 ```
 
-Para cada una de las entidades que colisionan vamos a tener que definer este método ( ```Wall```, ```Bomber```, ```Bagula``` y ```Emtpy```).  El más interesante:
+Para cada una de las entidades que colisionan vamos a tener que definer este método ( ```Wall```, ```Bomber```, ```Bagula``` y ```Emtpy```).  El más interesante es el siguiente:
 
 ```js 
 var Bomber = class Bomber {
@@ -200,7 +202,7 @@ var Bomber = class Bomber {
 };
 ```
 
-En el caso particular que el Bomberman colisione con la pared la paré implementará ```Wall>>bumpsIntoBomber```:
+En el caso particular que el Bomberman colisione con la pared la paré implementará ```Wall>>bumpsIntoBomber``` en cuyo caso lanzará una excepción. El código nos queda:
 
 ```js
 
@@ -211,7 +213,7 @@ var Wall = class Wall {
 };
 ```
 
-En el caso particular que el Bomberman colisione con ```Bagula``` este implementará ```Bagula>>bumpsIntoBomber```:
+En el caso particular que el Bomberman colisione con ```Bagula``` este implementará ```Bagula>>bumpsIntoBomber``` en cuyo caso ```Bagular``` mata a ```Bomber```:
 
 ```js
 var Bagulaa = class Bagulaa {
@@ -228,13 +230,11 @@ var Bagulaa = class Bagulaa {
 };
 ```
 
-Y mágia!
+Y mágia! Desaparecen los ifs!
 
 
-> Notar la importancia de definir **TODAS** las entidades de negocio y el impacto que esto genera en el código que se genera. Habiendo definido las entidades estas son capaces de adoptar nuevos comportamientos mientras que los tipos de datos ```null``` o ```undefined``` no!
+> Notar la importancia de definir **TODAS** las entidades de negocio y el impacto que esto genera en el código que se genera. Las entidades son capaces de adoptar nuevos comportamientos mientras que los tipos de datos ```null``` o ```undefined``` no!
 
-
-Otra cosa para destacar:
 
 > Habiendo seguido la metodología TDD logramos implementar estos casos de prueba obteniendo una cobertura del % 100
 
