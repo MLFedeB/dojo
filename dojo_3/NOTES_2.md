@@ -18,10 +18,10 @@ Abordamos el ejercicio [Dojo#3](https://github.com/diegosanchez/dojo/tree/worksh
 
 ## Qué ideas surgieron durante y/o problemas el dojo?
 
-1. Checked - null vs Entidades
+1. Checked  null vs Entidades
 2. Interacción entre entidades y extensibilidad 
 
-## Cronología de la actividad
+## Cronología de la actividad
 
 Retomames la actividad habiendo codificado el test: 
 
