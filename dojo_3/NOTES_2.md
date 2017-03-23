@@ -34,7 +34,7 @@ it("steps into a cell which is busy with an object then it doesn't move and thro
 });
 ```
 
-Dado que estabamos aplicando TDD, antes de proseguir con el siguiente test ```it.skip("steps into a cell which is busy with an enemy then it dies", () => {}); ```, analizamos la necesidad de un refactor (no necesariamente debemos llevarlo acabo). Para enmarcar las consideraciones comparto el código actual:
+Dado que estábamos aplicando TDD, antes de proseguir con el siguiente test ```it.skip("steps into a cell which is busy with an enemy then it dies", () => {}); ```, analizamos la necesidad de un refactor (no necesariamente debemos llevarlo acabo). Para enmarcar las consideraciones comparto el código actual:
 
 ```js
 var Bomber = class Bomber {
@@ -94,7 +94,7 @@ Dos cosas llaman la atención aquí:
 - Aparece un ```if``` en el método ```reclaimedBy```. Uff! 
 - Qué es ```okupa```?  
 
-El nombre ```okupa``` no es representativo para nuestro modelo de entidades, entonces tenemos que cambiarlo.  Podríamos utlizar *inhabitant*, *dweller*, *occupant* o *resident*.
+El nombre ```okupa``` no es representativo para nuestro modelo de entidades, entonces tenemos que cambiarlo.  Podríamos utilizar *inhabitant*, *dweller*, *occupant* o *resident*.
 Este ```if``` es consecuencia directa de que la celda tiene un ocupante que puede existir o no.  Este código evidencia la carencia de una entidad en nuestro modelo que represente la ausencia de contenido u ocupante.  Esta carencia en el diseño trae aparejadas varias consecuencias que no se evidencian sino hasta la implementación de las sucesivas pruebas (Cuestion 1).
 
 > La utilización del ```null``` o el ```undefined``` evidencia la ausencia de una entidad del negocio que represente la ausencia de contenido. Esto tiene como efecto la necesidad de tomar desiciones (es null o no el habitante) en lugar de delegar responsabilidad a la instancia que ocupa la celda (**cualquiera sea su clase**).
