@@ -230,8 +230,7 @@ var Bagulaa = class Bagulaa {
 };
 ```
 
-Y mágia! Desaparecen los ifs!
-
+Y mágia! Desaparecen los ifs! Lo que estamos aplicando aquí es un patrón de disño llamdado [Dobule dispatch](https://en.wikipedia.org/wiki/Double_dispatch)
 
 > Notar la importancia de definir **TODAS** las entidades de negocio y el impacto que esto genera en el código que se genera. Las entidades son capaces de adoptar nuevos comportamientos mientras que los tipos de datos ```null``` o ```undefined``` no!
 
