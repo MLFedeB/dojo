@@ -1,16 +1,6 @@
 # Dojo#3
 
-Participantes
-
-| Nombre y Apellido | Actividad |
-| ----------------- |:---------:|
-| David Machado     | Codeo     |
-| Juan Ucciani      | "         |
-| Maxi              | "         |
-| Fede Bazán        | "         |
-| Gaston Montes     | "         |
-| Gisela Saborido   | "         |
-| Romina Cardozo    | "         |
+Participantes (*omitido intencionalmente*)
 
 ## Qué hicimos durante el dojo?
 
