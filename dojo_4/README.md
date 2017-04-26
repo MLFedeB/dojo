@@ -2,7 +2,7 @@
 
 El objetivo de este dojo es implementar parcialmente el modelo del juego [Pacman](https://en.wikipedia.org/wiki/Pac-Man)).
 
-La funcionalidad que buscamos implementar queda descripta por los tests de integración listados en el archivo [test/solution.js](test/solution.js)
+La funcionalidad que buscamos implementar queda descripta por los tests de integración listados en el archivo [javascript/test/solution.js](test/solution.js)
 
 ### Metodología
 
