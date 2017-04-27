@@ -43,3 +43,13 @@ Si bien tengo un ejercicios para plantear les propongo que compartan algún prob
 #### Comentarios Varios
 
 Se que algunos no van a poder asistir; a estas personas les propongo que sumen algún otro interesado para que participe.
+
+## Es la primera vez que desarrollo en Javascript
+
+Para los que elijan JS como lenguaje para realizar el dojo aquí encontrarán ejemplos de código para:
+- Declarar y definir una clase: ([dojo_base/javascript/MyClass.js](dojo_base/javascript/MyClass.js))
+- Como definir la igualdad de instancias: ([dojo_base/javascript/MyClass.js](dojo_base/javascript/MyClass.js#L7))
+- Como lanzar exceptions: ([dojo_base/javascript/MyClass.js](dojo_base/javascript/MyClass.js#L12))
+- Como escribir un test para verificar valor devuelto: ([dojo_base/javascript/test/solution.js](dojo_base/javascript/test/solution.js#L10))
+- Como escribir un test para verificar lanzamiento de exception: ([dojo_base/javascript/test/solution.js](dojo_base/javascript/test/solution.js#L15))
+
