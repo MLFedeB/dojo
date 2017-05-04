@@ -1,4 +1,4 @@
-### Bomberman
+### Pacman
 
 El objetivo de este dojo es implementar parcialmente el modelo del juego [Pacman](https://en.wikipedia.org/wiki/Pac-Man)).
 
