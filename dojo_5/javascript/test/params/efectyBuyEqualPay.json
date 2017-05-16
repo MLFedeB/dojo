@@ -1,0 +1,256 @@
+{
+          "mediations": [],
+          "shipping_cost": 0,
+          "date_created": "2017-05-11T19:10:52.000-04:00",
+          "feedback": {
+            "purchase": null,
+            "sale": null
+          },
+          "id": 1372165859,
+          "shipping": {
+            "service_id": null,
+            "currency_id": "COP",
+            "status": "pending",
+            "shipping_mode": "me2",
+            "shipping_items": [
+              {
+                "id": "MCO443736997",
+                "description": "Mascara De Caballo Unicornio Importada Latex Envio Gratis",
+                "dimensions": "12.0x18.0x20.0,1000.0",
+                "quantity": 1
+              }
+            ],
+            "site_id": "MCO",
+            "receiver_address": {
+              "zip_code": "760026",
+              "street_name": "Cra 83c 48 24",
+              "state": {
+                "id": "CO-VAC",
+                "name": "Valle Del Cauca"
+              },
+              "neighborhood": {
+                "id": null,
+                "name": "Caney"
+              },
+              "municipality": {
+                "id": null,
+                "name": null
+              },
+              "agency": null,
+              "geolocation_type": "APPROXIMATE",
+              "address_line": "Cra 83c 48 24 #cra 83c-48 24",
+              "receiver_phone": "3186952168",
+              "receiver_name": "Adriana Diaz",
+              "city": {
+                "id": "TUNPQ0NBTDYyZDA0",
+                "name": "Cali"
+              },
+              "country": {
+                "id": "CO",
+                "name": "Colombia"
+              },
+              "id": 271636886,
+              "longitude": -76.52,
+              "street_number": "#cra 83c-48 24",
+              "latitude": 3.38,
+              "comment": "Torre c apto 502",
+              "types": [
+                "default_buying_address"
+              ]
+            },
+            "date_created": "2017-05-11T19:10:53.000-04:00",
+            "logistic_type": "drop_off",
+            "cost": 0,
+            "sender_address": {
+              "zip_code": null,
+              "street_name": "Carrera 40",
+              "state": {
+                "id": "CO-VAC",
+                "name": "Valle Del Cauca"
+              },
+              "neighborhood": {
+                "id": null,
+                "name": "Cambulos"
+              },
+              "municipality": {
+                "id": null,
+                "name": null
+              },
+              "agency": null,
+              "geolocation_type": "RANGE_INTERPOLATED",
+              "address_line": "Carrera 40 #9B-68",
+              "city": {
+                "id": "TUNPQ0NBTDYyZDA0",
+                "name": "Cali"
+              },
+              "country": {
+                "id": "CO",
+                "name": "Colombia"
+              },
+              "id": 123291480,
+              "longitude": -76.54,
+              "street_number": "#9B-68",
+              "latitude": 3.42,
+              "comment": "Primer Piso",
+              "types": [
+                "billing",
+                "default_buying_address",
+                "default_selling_address",
+                "shipping"
+              ]
+            },
+            "date_first_printed": null,
+            "mode": "me2",
+            "substatus": null,
+            "id": 26185287289,
+            "shipping_option": {
+              "id": 523878060,
+              "estimated_delivery_time": {
+                "shipping": 24,
+                "unit": "hour",
+                "pay_before": null,
+                "time_frame": {
+                  "to": null,
+                  "from": null
+                },
+                "offset": {
+                  "shipping": null,
+                  "date": null
+                },
+                "date": null,
+                "type": "known",
+                "handling": 24
+              },
+              "estimated_delivery_limit": {
+                "date": null
+              },
+              "list_cost": 5500,
+              "currency_id": "COP",
+              "estimated_delivery_extended": {
+                "date": null
+              },
+              "name": "Servientrega Normal",
+              "estimated_delivery_final": {
+                "date": null
+              },
+              "estimated_handling_limit": {
+                "date": null
+              },
+              "cost": 0,
+              "shipping_method_id": 501745
+            },
+            "sender_id": 48633735,
+            "shipment_type": "shipping",
+            "cost_components": {
+              "compensation": 0,
+              "loyal_discount": 0,
+              "special_discount": 0
+            },
+            "picking_type": "drop_off",
+            "receiver_id": 147951573
+          },
+          "fulfilled": null,
+          "buyer": {
+            "id": 147951573,
+            "nickname": "DIAD7775520"
+          },
+          "buying_mode": "buy_equals_pay",
+          "date_closed": null,
+          "order_items": [
+            {
+              "currency_id": "COP",
+              "differential_pricing_id": null,
+              "item": {
+                "id": "MCO443736997",
+                "title": "Mascara De Caballo Unicornio Importada Latex Envio Gratis",
+                "condition": "new",
+                "seller_custom_field": "20033",
+                "variation_attributes": [],
+                "category_id": "MCO157584",
+                "warranty": "Se detalla dentro de la publicación",
+                "variation_id": null
+              },
+              "listing_type_id": "silver",
+              "sale_fee": 5324,
+              "quantity": 1,
+              "unit_price": 70990
+            }
+          ],
+          "paid_amount": 0,
+          "application_id": "1505",
+          "coupon": {
+            "amount": 0,
+            "id": null
+          },
+          "total_amount": 70990,
+          "tags": [
+            "not_delivered",
+            "not_paid"
+          ],
+          "currency_id": "COP",
+          "order_request": {
+            "change": null,
+            "return": null
+          },
+          "status": "payment_required",
+          "internal_tags": [],
+          "pack_id": null,
+          "status_detail": {
+            "description": "Order only in MercadoLibre Site.",
+            "code": "seller_restriction"
+          },
+          "seller": {
+            "id": 48633735,
+            "nickname": "DISTRIBUYELO-1"
+          },
+          "hidden_for_seller": true,
+          "expiration_date": null,
+          "payments": [
+            {
+              "reason": "Mascara De Caballo Unicornio Importada Latex Envio Gratis",
+              "shipping_cost": 0,
+              "coupon_id": null,
+              "marketplace_fee": 5324,
+              "activation_uri": "https://www.mercadopago.com/mco/payments/ticket/helper?payment_id=2726596960&payment_method_reference_id=2332647556&caller_id=147951573",
+              "date_created": "2017-05-11T19:10:54.072-04:00",
+              "atm_transfer_reference": {
+                "company_id": null,
+                "transaction_id": null
+              },
+              "order_id": 1372165859,
+              "card_id": null,
+              "id": 2726596960,
+              "total_paid_amount": 70990,
+              "collector": {
+                "id": 48633735
+              },
+              "payer_id": 147951573,
+              "issuer_id": null,
+              "transaction_order_id": null,
+              "transaction_amount": 70990,
+              "available_actions": [
+                "cancel",
+                "alter"
+              ],
+              "deferred_period": null,
+              "installment_amount": 70990,
+              "coupon_amount": 0,
+              "status_code": null,
+              "currency_id": "COP",
+              "status": "pending",
+              "payment_method_id": "efecty",
+              "site_id": "MCO",
+              "status_detail": "pending_waiting_payment",
+              "operation_type": "regular_payment",
+              "date_last_modified": "2017-05-11T19:10:54.031-04:00",
+              "installments": null,
+              "authorization_code": null,
+              "date_approved": null,
+              "overpaid_amount": 0,
+              "payment_type": "ticket"
+            }
+          ],
+          "total_amount_with_shipping": 70990,
+          "last_updated": "2017-05-11T19:10:54.000-04:00",
+          "comments": null
+        }
