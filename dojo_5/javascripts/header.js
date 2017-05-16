@@ -10,12 +10,12 @@ function Header(payment, shipping) {
 }
 
 Header.prototype.asJSON = function asJSON() {
-    var paymentHeaderModel = this._payment.getHeaderModel();
+    var headerModel = this._payment.getHeaderModel() || this._shipping.getHeaderModel();
 
     return {
         "status": "success",
         "substatus": null,
-        "heading": paymentHeaderModel.heading,
-        "title": paymentHeaderModel.title
+        "heading": headerModel.heading,
+        "title": headerModel.title
     };
 };

@@ -31,7 +31,7 @@ describe("congrats", () => {
              });
         });
 
-        it.skip("should render congrats for orders paid by credit cards shipped by ME", () => {
+        it("should render congrats for orders paid by credit cards shipped by ME", () => {
 
             var order = new Order(orders().creditCardByEqualPayShippedByME);
             var congrats = new Congrats(order);
