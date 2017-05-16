@@ -10,7 +10,9 @@
 6. Diferenciamos Uso vs Construcción? 
 7. Un cambio de requerimiento afecta a varias entidades de nuestro modelo? 
 8. El lenguaje que utilizamos en el código es diferente al que utiliza la compañía? 
-9. Sabemos cuál es el impacto de estas prácticas?
+9. Es difícil escribir nuevos tests?
+10. Tenemos métodos que nos permiten preguntarle a un objeto acerca de su estado (```Payment>>isApproved```, ```Payment>>isCreditCard```, ```Shipping>>isSamedayDelivery```, etc.).
+11. Sabemos cuál es el impacto de estas prácticas?
 
 Si algunas de estas cosas se tornaron cotidianas, podríamos decir que nuestro código es de mala calidad!
 

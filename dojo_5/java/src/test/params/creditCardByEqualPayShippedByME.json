@@ -1,0 +1,284 @@
+{
+          "id": 1372632473,
+          "date_created": "2017-05-12T12:20:49.000-04:00",
+          "date_closed": "2017-05-12T12:20:53.000-04:00",
+          "last_updated": "2017-05-12T12:20:53.000-04:00",
+          "feedback": {
+            "sale": null,
+            "purchase": null
+          },
+          "mediations": [],
+          "comments": null,
+          "order_request": {
+            "return": null,
+            "change": null
+          },
+          "fulfilled": null,
+          "application_id": "1505",
+          "hidden_for_seller": false,
+          "buying_mode": "buy_equals_pay",
+          "shipping_cost": 90,
+          "pack_id": null,
+          "shipping": {
+            "id": 26185641196,
+            "site_id": "MLM",
+            "shipment_type": "shipping",
+            "mode": "me2",
+            "shipping_mode": "me2",
+            "status": "ready_to_ship",
+            "shipping_items": [
+              {
+                "id": "MLM572497365",
+                "description": "Funda Shockproof Contra Agua Iphone 5(s), Se, 6, 6s Plus Msi",
+                "quantity": 1,
+                "dimensions": "5.0x11.0x11.0,100.0"
+              }
+            ],
+            "shipping_option": {
+              "id": 516326450,
+              "shipping_method_id": 501345,
+              "name": "Express",
+              "currency_id": "MXN",
+              "cost": 90,
+              "list_cost": 90,
+              "estimated_handling_limit": {
+                "date": "2017-05-17T00:00:00.000-05:00"
+              },
+              "estimated_delivery_final": {
+                "date": "2017-06-15T00:00:00.000-05:00"
+              },
+              "estimated_delivery_limit": {
+                "date": "2017-05-30T00:00:00.000-05:00"
+              },
+              "estimated_delivery_extended": {
+                "date": "2017-05-23T00:00:00.000-05:00"
+              },
+              "estimated_delivery_time": {
+                "type": "known",
+                "date": "2017-05-18T00:00:00.000-05:00",
+                "unit": "hour",
+                "offset": {
+                  "date": null,
+                  "shipping": null
+                },
+                "time_frame": {
+                  "from": null,
+                  "to": null
+                },
+                "pay_before": null,
+                "shipping": 24,
+                "handling": 72
+              }
+            },
+            "currency_id": "MXN",
+            "receiver_address": {
+              "id": 197572132,
+              "address_line": "calle vamos tamaulipas #103 oriente 103",
+              "street_name": "calle vamos tamaulipas #103 oriente",
+              "street_number": "103",
+              "comment": "Referencia: color azul, portón negro y en la esquina de la calle se encuentra un poste.",
+              "zip_code": "89555",
+              "city": {
+                "id": "TUxNQ0NJVTk1Nzg",
+                "name": "Ciudad Madero"
+              },
+              "state": {
+                "id": "MX-TAM",
+                "name": "Tamaulipas"
+              },
+              "country": {
+                "id": "MX",
+                "name": "Mexico"
+              },
+              "neighborhood": {
+                "id": null,
+                "name": "MANUEL CAVAZOS LERMA"
+              },
+              "municipality": {
+                "id": null,
+                "name": "Ciudad Madero"
+              },
+              "agency": null,
+              "types": [
+                "default_buying_address"
+              ],
+              "latitude": 22.28,
+              "longitude": -97.84,
+              "geolocation_type": "GEOMETRIC_CENTER",
+              "receiver_name": "Mario Juarez Castillo",
+              "receiver_phone": "833 1 55 25 95"
+            },
+            "sender_address": {
+              "id": 188481616,
+              "address_line": "Avenida Hidalgo 1911",
+              "street_name": "Avenida Hidalgo",
+              "street_number": "1911",
+              "comment": "3 Referencia Frente a la Iglesia del Rosario",
+              "zip_code": "89170",
+              "city": {
+                "id": "TUxNQ1RBTTUyMTg",
+                "name": "Tampico"
+              },
+              "state": {
+                "id": "MX-TAM",
+                "name": "Tamaulipas"
+              },
+              "country": {
+                "id": "MX",
+                "name": "Mexico"
+              },
+              "neighborhood": {
+                "id": null,
+                "name": "Aurora"
+              },
+              "municipality": {
+                "id": null,
+                "name": "Tampico"
+              },
+              "agency": null,
+              "types": [
+                "billing",
+                "default_selling_address",
+                "shipping"
+              ],
+              "latitude": 22.24,
+              "longitude": -97.87,
+              "geolocation_type": "RANGE_INTERPOLATED"
+            },
+            "picking_type": "drop_off",
+            "logistic_type": "drop_off",
+            "cost": 90,
+            "substatus": "ready_to_print",
+            "date_created": "2017-05-12T12:20:49.000-04:00",
+            "date_first_printed": null,
+            "service_id": 181,
+            "receiver_id": 233559981,
+            "sender_id": 54223401,
+            "cost_components": {
+              "special_discount": 0,
+              "loyal_discount": 0,
+              "compensation": 0
+            }
+          },
+          "expiration_date": "2017-06-02T12:20:53.000-04:00",
+          "status": "paid",
+          "status_detail": {
+            "code": "item_price_restriction",
+            "description": null
+          },
+          "order_items": [
+            {
+              "item": {
+                "id": "MLM572497365",
+                "title": "Funda Shockproof Contra Agua Iphone 5(s), Se, 6, 6s Plus Msi",
+                "category_id": "MLM167522",
+                "variation_id": null,
+                "seller_custom_field": null,
+                "variation_attributes": [],
+                "warranty": "Hasta 3 meses de garantía por defecto de fábrica. No se hará válida la garantía por ningún daño físico",
+                "condition": "new"
+              },
+              "quantity": 1,
+              "unit_price": 178,
+              "currency_id": "MXN",
+              "sale_fee": 31.15,
+              "listing_type_id": "gold_pro",
+              "differential_pricing_id": 19430565
+            }
+          ],
+          "currency_id": "MXN",
+          "buyer": {
+            "id": 233559981,
+            "nickname": "MARIOJUAREZCASTILLO",
+            "email": "mjuarez.v7pw3s+2-ogeztomrwgmzdkmjy@mail.mercadolibre.com.mx",
+            "phone": {
+              "area_code": " ",
+              "number": "833 1552595",
+              "extension": "",
+              "verified": false
+            },
+            "alternative_phone": {
+              "area_code": "",
+              "number": "",
+              "extension": ""
+            },
+            "first_name": "Mario",
+            "last_name": "Juarez Castillo",
+            "billing_info": {
+              "doc_type": null,
+              "doc_number": null
+            }
+          },
+          "seller": {
+            "id": 54223401,
+            "nickname": "RF2309",
+            "email": "rfloren.y810bq+2-ogeztomrwgmzdioju@mail.mercadolibre.com.mx",
+            "phone": {
+              "area_code": "833",
+              "number": "1554033",
+              "extension": "",
+              "verified": false
+            },
+            "alternative_phone": {
+              "area_code": "833",
+              "number": "1554033",
+              "extension": ""
+            },
+            "first_name": "Rafael",
+            "last_name": "Florenzano"
+          },
+          "payments": [
+            {
+              "id": 2728326085,
+              "order_id": 1372632473,
+              "payer_id": 233559981,
+              "collector": {
+                "id": 54223401
+              },
+              "card_id": 191758392,
+              "site_id": "MLM",
+              "reason": "Funda Shockproof Contra Agua Iphone 5(s), Se, 6, 6s Plus Msi",
+              "payment_method_id": "visa",
+              "currency_id": "MXN",
+              "installments": 1,
+              "issuer_id": "158",
+              "atm_transfer_reference": {
+                "company_id": null,
+                "transaction_id": null
+              },
+              "coupon_id": null,
+              "activation_uri": null,
+              "operation_type": "regular_payment",
+              "payment_type": "credit_card",
+              "available_actions": [],
+              "status": "approved",
+              "status_code": "0",
+              "status_detail": "accredited",
+              "transaction_amount": 178,
+              "shipping_cost": 90,
+              "coupon_amount": 0,
+              "overpaid_amount": 0,
+              "total_paid_amount": 268,
+              "installment_amount": 268,
+              "deferred_period": null,
+              "date_approved": "2017-05-12T12:20:53.000-04:00",
+              "authorization_code": "344818",
+              "transaction_order_id": "344818",
+              "date_created": "2017-05-12T12:20:53.402-04:00",
+              "date_last_modified": "2017-05-12T12:20:53.348-04:00",
+              "marketplace_fee": 31.15
+            }
+          ],
+          "coupon": {
+            "id": null,
+            "amount": 0
+          },
+          "tags": [
+            "not_delivered",
+            "paid"
+          ],
+          "internal_tags": [],
+          "total_amount": 178,
+          "total_amount_with_shipping": 268,
+          "paid_amount": 268
+        }

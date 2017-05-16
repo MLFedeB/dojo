@@ -1,0 +1,258 @@
+{
+          "id": 1372551201,
+          "date_created": "2017-05-12T10:47:13.000-04:00",
+          "date_closed": "2017-05-12T10:47:17.000-04:00",
+          "last_updated": "2017-05-12T10:47:18.000-04:00",
+          "feedback": {
+            "sale": null,
+            "purchase": null
+          },
+          "mediations": [],
+          "comments": null,
+          "order_request": {
+            "return": null,
+            "change": null
+          },
+          "fulfilled": null,
+          "application_id": "1505",
+          "hidden_for_seller": false,
+          "buying_mode": "buy_equals_pay",
+          "shipping_cost": 0,
+          "pack_id": null,
+          "shipping": {
+            "id": 26185627308,
+            "site_id": "MCO",
+            "shipment_type": "custom_shipping",
+            "mode": "custom",
+            "shipping_mode": "custom",
+            "shipping_items": [
+              {
+                "id": "MCO444854900",
+                "description": "A Prueba De Choques 360° Híbrido Completo De Vidrio",
+                "quantity": 1,
+                "dimensions": null
+              }
+            ],
+            "shipping_option": {
+              "id": null,
+              "name": "add_shipping_cost",
+              "currency_id": "COP",
+              "list_cost": 0,
+              "cost": 0,
+              "speed": null
+            },
+            "currency_id": "COP",
+            "receiver_address": {
+              "id": 177920979,
+              "address_line": "Calle 74 #78-09",
+              "street_name": "Calle 74",
+              "street_number": "#78-09",
+              "comment": null,
+              "zip_code": null,
+              "city": {
+                "id": "Q08tRENCb2dvdA",
+                "name": "Bogotá"
+              },
+              "state": {
+                "id": "CO-DC",
+                "name": "Bogotá D.C."
+              },
+              "country": {
+                "id": "CO",
+                "name": "Colombia"
+              },
+              "neighborhood": {
+                "id": null,
+                "name": "Tabora"
+              },
+              "municipality": {
+                "id": null,
+                "name": null
+              },
+              "agency": null,
+              "types": null,
+              "latitude": null,
+              "longitude": null,
+              "geolocation_type": null,
+              "receiver_name": "LEIDY JORDAN GUTIÉRREZ",
+              "receiver_phone": "3182651514"
+            },
+            "sender_address": {
+              "id": 189791056,
+              "address_line": "Carrera 5 #86A-48",
+              "street_name": "Carrera 5",
+              "street_number": "#86A-48",
+              "comment": null,
+              "zip_code": null,
+              "city": {
+                "id": "TUNPQ0NIQTk2OTI1",
+                "name": "Chapinero"
+              },
+              "state": {
+                "id": "CO-DC",
+                "name": "Bogotá D.C."
+              },
+              "country": {
+                "id": "CO",
+                "name": "Colombia"
+              },
+              "neighborhood": {
+                "id": null,
+                "name": "El Refugio"
+              },
+              "municipality": {
+                "id": null,
+                "name": null
+              },
+              "agency": null,
+              "types": [
+                "billing",
+                "default_selling_address",
+                "shipping"
+              ],
+              "latitude": null,
+              "longitude": null,
+              "geolocation_type": null
+            },
+            "picking_type": null,
+            "logistic_type": null,
+            "cost": 0,
+            "substatus": null,
+            "date_created": "2017-05-12T10:47:13.000-04:00",
+            "date_first_printed": null,
+            "service_id": null,
+            "receiver_id": 114839149,
+            "sender_id": 221747504,
+            "cost_components": {
+              "special_discount": 0
+            }
+          },
+          "expiration_date": "2017-06-03T10:47:17.000-04:00",
+          "status": "paid",
+          "status_detail": {
+            "code": "seller_restriction",
+            "description": null
+          },
+          "order_items": [
+            {
+              "item": {
+                "id": "MCO444854900",
+                "title": "A Prueba De Choques 360° Híbrido Completo De Vidrio",
+                "category_id": "MCO91039",
+                "variation_id": 15601696947,
+                "seller_custom_field": "551502880980",
+                "variation_attributes": [
+                  {
+                    "id": null,
+                    "name": "Fits for|Color",
+                    "value_id": null,
+                    "value_name": "for iPhone 7 Plus|Rose-Gray"
+                  }
+                ],
+                "warranty": "Este producto cuenta con un (1) mes de garantía de fábrica, la cual cubre daños por defectos del material o errores en la fabricación. La garantía No cubre mala manipulación por parte del usuario. Producto Nuevo Original y enviado desde USA. Versión en Inglés.",
+                "condition": "new"
+              },
+              "quantity": 1,
+              "unit_price": 55990,
+              "currency_id": "COP",
+              "sale_fee": 5599,
+              "listing_type_id": "gold_special",
+              "differential_pricing_id": null
+            }
+          ],
+          "currency_id": "COP",
+          "buyer": {
+            "id": 114839149,
+            "nickname": "LEIDYJORDAN",
+            "email": "ljordan.hc17cf+2-ogeztomrvguytenbr@mail.mercadolibre.com",
+            "phone": {
+              "area_code": " ",
+              "number": "(57)3166995214",
+              "extension": "",
+              "verified": false
+            },
+            "alternative_phone": {
+              "area_code": "",
+              "number": "",
+              "extension": ""
+            },
+            "first_name": "Leidy",
+            "last_name": "Jordan",
+            "billing_info": {
+              "doc_type": "CC",
+              "doc_number": "1019006747"
+            }
+          },
+          "seller": {
+            "id": 221747504,
+            "nickname": "YAXACHINA",
+            "email": "ychina.2z8y3p+2-ogeztomrvguytemzt@mail.mercadolibre.com.co",
+            "phone": {
+              "area_code": "0",
+              "number": "5716051300",
+              "extension": "",
+              "verified": false
+            },
+            "alternative_phone": {
+              "area_code": "",
+              "number": "",
+              "extension": ""
+            },
+            "first_name": "YAXA COLOMBIA S A S",
+            "last_name": "YAXA COLOMBIA S A S"
+          },
+          "payments": [
+            {
+              "id": 2727945599,
+              "order_id": 1372551201,
+              "payer_id": 114839149,
+              "collector": {
+                "id": 221747504
+              },
+              "card_id": 168958669,
+              "site_id": "MCO",
+              "reason": "A Prueba De Choques 360° Híbrido Completo De Vidrio",
+              "payment_method_id": "visa",
+              "currency_id": "COP",
+              "installments": 1,
+              "issuer_id": "551",
+              "atm_transfer_reference": {
+                "company_id": null,
+                "transaction_id": null
+              },
+              "coupon_id": null,
+              "activation_uri": null,
+              "operation_type": "regular_payment",
+              "payment_type": "credit_card",
+              "available_actions": [],
+              "status": "approved",
+              "status_code": "00",
+              "status_detail": "accredited",
+              "transaction_amount": 55990,
+              "shipping_cost": 0,
+              "coupon_amount": 0,
+              "overpaid_amount": 0,
+              "total_paid_amount": 55990,
+              "installment_amount": 55990,
+              "deferred_period": null,
+              "date_approved": "2017-05-12T10:47:17.000-04:00",
+              "authorization_code": "005877",
+              "transaction_order_id": "907641224",
+              "date_created": "2017-05-12T10:47:17.522-04:00",
+              "date_last_modified": "2017-05-12T10:47:17.479-04:00",
+              "marketplace_fee": 5599
+            }
+          ],
+          "coupon": {
+            "id": null,
+            "amount": 0
+          },
+          "tags": [
+            "not_delivered",
+            "paid"
+          ],
+          "internal_tags": [],
+          "total_amount": 55990,
+          "total_amount_with_shipping": 55990,
+          "paid_amount": 55990
+        }

@@ -1,6 +1,6 @@
-### Pacman
+### Congrats
 
-El objetivo de este dojo es implementar parcialmente el modelo del juego [Pacman](https://en.wikipedia.org/wiki/Pac-Man)).
+El objetivo de este dojo es implementar parcialmente el modelo del congrats del CHO Mobile .
 
 La funcionalidad que buscamos implementar queda descripta por los tests de integración listados en el archivo [test/solution.js](javascripts/test/solution.js)
 
