@@ -10,11 +10,9 @@ describe("solution", () => {
 
     describe("sheet", () => {
         describe("cells", () => {
-            it.skip("should populate two cells with numeric values and response the stored values", () => {
-
-                // ... 
-                // Code here!
-                // ... 
+            it("should populate two cells with numeric values and response the stored values", () => {
+                sheet.setValue("a1", 1);
+                sheet.setValue("a2", 2);
 
                 chai.expect( sheet.get("a1") )
                     .to.be.eql(1);
@@ -22,11 +20,10 @@ describe("solution", () => {
                     .to.be.eql(2);
             });
 
-            it.skip("should polulate cells with a label and a value and response the stored values", () => {
+            it("should polulate cells with a label and a value and response the stored values", () => {
 
-                // ... 
-                // Code here!
-                // ... 
+                sheet.setLabel("a1", "Valor:");
+                sheet.setValue("a2", 2);
 
                 chai.expect( sheet.get("a1") )
                     .to.be.eql("Valor:");
@@ -34,16 +31,30 @@ describe("solution", () => {
                     .to.be.eql(2);
             });
 
-            it.skip("should store values and update values references", () => {
+            it("should store values and update values references", () => {
 
-                // ... 
-                // Code here!
-                // ... 
+                sheet.setValue("a1", 1);
+                sheet.setIdentity("a2", "=id(a1)")
 
                 chai.expect( sheet.get("a1") )
                     .to.be.eql(1);
                 chai.expect( sheet.get("a2") )
                     .to.be.eql(1);
+
+                sheet.setValue("a1", 2);
+
+                chai.expect( sheet.get("a1") )
+                    .to.be.eql(2);
+                chai.expect( sheet.get("a2") )
+                    .to.be.eql(2);
+
+            });
+
+            it("should throw error because cell doesn't exist", () => {
+
+                chai.assert.throws( () => {
+                    sheet.get("a1");
+                });
             });
 
             it.skip("should response summatory", () => {
