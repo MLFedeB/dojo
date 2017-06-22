@@ -9,4 +9,3 @@ function Identify(cellAddress, cells) {
 Identify.prototype.value = function() {
     return this.cell.getContent();
 };
-

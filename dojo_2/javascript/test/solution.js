@@ -57,11 +57,11 @@ describe("solution", () => {
                 });
             });
 
-            it.skip("should response summatory", () => {
+            it("should response summatory", () => {
 
-                // ... 
-                // Code here!
-                // ... 
+                sheet.setValue("a1", 1);
+                sheet.setValue("a2", 2);
+                sheet.setIdentity("a3", "=summatory(a1:a2)")
 
                 chai.expect( sheet.get("a3") )
                     .to.be.eql(3);
