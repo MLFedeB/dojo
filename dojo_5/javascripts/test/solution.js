@@ -7,32 +7,41 @@ describe("congrats", () => {
     describe("B = P", function() {
         it("should get rendered congrats for Efecty", () => {
 
-            // chai.assert.deepEqual( congrats.asJSON(), {
-            //     "status": "success",
-            //     "substatus": null,
-            //     "heading": "¡Apúrate a pagar!",
-            //     "title": "Paga ${price} en ${paymentMethodName} para reservar tu compra",
-            // });
+            var order = new Order(orders().efectyBuyEqualPay);
+            var congrats = new Congrats(order);
+
+             chai.assert.deepEqual( congrats.asJSON(), {
+                 "status": "success",
+                 "substatus": null,
+                 "heading": "¡Apúrate a pagar!",
+                 "title": "Paga ${price} en ${paymentMethodName} para reservar tu compra"
+             });
         });
 
         it("should render congrats for orders paid by credit cards shipped customly", () => {
 
-            // chai.assert.deepEqual( congrats.asJSON(), {
-            //     "status": "success",
-            //     "substatus": null,
-            //     "heading": "¡Tu pago está aprobado!",
-            //     "title": "Coordina con el vendedor el envío",
-            // });
+            var order = new Order(orders().creditCardBuyEqualPayWithCustomShipping);
+            var congrats = new Congrats(order);
+
+             chai.assert.deepEqual( congrats.asJSON(), {
+                 "status": "success",
+                 "substatus": null,
+                 "heading": "¡Tu pago está aprobado!",
+                 "title": "Coordina con el vendedor el envío"
+             });
         });
 
-        it("should render congrats for orders paid by credit cards shipped customly", () => {
+        it("should render congrats for orders paid by credit cards shipped by ME", () => {
 
-            // chai.assert.deepEqual( congrats.asJSON(), {
-            //     "status": "success",
-            //     "substatus": null,
-            //     "heading": "¡Excelente compra!",
-            //     "title": "El jueves 2017-05-18T00:00:00.000-05:00. te llegará el producto",
-            // });
+            var order = new Order(orders().creditCardByEqualPayShippedByME);
+            var congrats = new Congrats(order);
+
+             chai.assert.deepEqual( congrats.asJSON(), {
+                 "status": "success",
+                 "substatus": null,
+                 "heading": "¡Excelente compra!",
+                 "title": "El jueves 2017-05-18T00:00:00.000-05:00. te llegará el producto"
+             });
         });
 
     });
